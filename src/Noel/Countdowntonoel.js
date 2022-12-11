@@ -26,9 +26,9 @@ export default function Countdowntonoel() {
         var seconds_temp = Math.floor((distance % (1000 * 60)) / 1000);
 
         //If the number has 1 character, insert a "0" before it
-        days_temp < 10 ? setDays(`0${days_temp}`) : setSeconds(days_temp);
-        hours_temp < 10 ? setHours(`0${hours_temp}`) : setSeconds(hours_temp);
-        minutes_temp < 10 ? setMinutes(`0${minutes_temp}`) : setSeconds(minutes_temp);
+        days_temp < 10 ? setDays(`0${days_temp}`) : setDays(days_temp);
+        hours_temp < 10 ? setHours(`0${hours_temp}`) : setHours(hours_temp);
+        minutes_temp < 10 ? setMinutes(`0${minutes_temp}`) : setMinutes(minutes_temp);
         seconds_temp < 10 ? setSeconds(`0${seconds_temp}`) : setSeconds(seconds_temp);
 
         // If the count down is over, write some text 
