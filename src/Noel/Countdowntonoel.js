@@ -43,7 +43,7 @@ export default function Countdowntonoel() {
                 <img id="img_logo" src={logo} alt="logo_vnvc" />
             </div>
             <div id="div_center">
-                <h3>COUNTDOWN TO {holiday[0]}</h3>
+                <h3>COUNTDOWN TO</h3><h3 id='h3_holiday'>{holiday[0]}</h3>
             </div>
             <div id="div_bottom">
                 <div className="div_item">
