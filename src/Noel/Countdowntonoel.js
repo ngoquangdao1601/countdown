@@ -1,5 +1,6 @@
 import logo from './img/logo_vnvc_trong_suot.png';
 import './style.css';
+import './snowEffect.css';
 import { useState } from 'react';
 import * as React from 'react';
 
@@ -39,6 +40,23 @@ export default function Countdowntonoel() {
 
     return (
         <div id="div_body">
+
+            {/* Snow Effect */}
+            <div class="snowflakes" aria-hidden="true">
+                <div class="snowflake">❅</div>
+                <div class="snowflake">❆</div>
+                <div class="snowflake">❅</div>
+                <div class="snowflake">❆</div>
+                <div class="snowflake">❅</div>
+                <div class="snowflake">❆</div>
+                <div class="snowflake">❅</div>
+                <div class="snowflake">❆</div>
+                <div class="snowflake">❅</div>
+                <div class="snowflake">❆</div>
+                <div class="snowflake">❅</div>
+                <div class="snowflake">❆</div>
+            </div>
+
             <div id="div_top">
                 <img id="img_logo" src={logo} alt="logo_vnvc" />
             </div>
