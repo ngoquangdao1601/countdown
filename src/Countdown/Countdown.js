@@ -1,10 +1,10 @@
 import logo from './img/logo_vnvc_trong_suot.png';
-import './style.css';
-import './snowEffect.css';
+import './Countdown.css';
 import { useState } from 'react';
 import * as React from 'react';
+import SnowEffect from './SnowEffect.js';
 
-export default function Countdowntonoel() {
+export default function Countdown() {
     var countDownDate = new Date("Dec 25, 2022 00:00:00").getTime();
     const [days, setDays] = useState("");
     const [hours, setHours] = useState("");
@@ -41,21 +41,7 @@ export default function Countdowntonoel() {
     return (
         <div id="div_body">
 
-            {/* Snow Effect */}
-            <div class="snowflakes" aria-hidden="true">
-                <div class="snowflake">❅</div>
-                <div class="snowflake">❆</div>
-                <div class="snowflake">❅</div>
-                <div class="snowflake">❆</div>
-                <div class="snowflake">❅</div>
-                <div class="snowflake">❆</div>
-                <div class="snowflake">❅</div>
-                <div class="snowflake">❆</div>
-                <div class="snowflake">❅</div>
-                <div class="snowflake">❆</div>
-                <div class="snowflake">❅</div>
-                <div class="snowflake">❆</div>
-            </div>
+            <SnowEffect/>
 
             <div id="div_top">
                 <img id="img_logo" src={logo} alt="logo_vnvc" />
