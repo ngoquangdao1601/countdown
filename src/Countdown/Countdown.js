@@ -5,7 +5,7 @@ import * as React from 'react';
 import SnowEffect from './SnowEffect.js';
 
 export default function Countdown() {
-    var countDownDate = new Date("Dec 25, 2022 00:00:00").getTime();
+    var countDownDate = new Date("Dec 25, 2023 00:00:00").getTime();
     const [days, setDays] = useState("");
     const [hours, setHours] = useState("");
     const [minutes, setMinutes] = useState("");
